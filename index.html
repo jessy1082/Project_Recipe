@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Peruvian Dishes</title>
+    <!-- <script type="text/javascript"> 
+    function fn1()
+        {
+            // var d = document.getElementById("ddselect");
+            // var displaytext= d.options(d.selectedIndex).text;
+            // document.getElementById("txtvalue").value=displaytext;
+
+            // var select = document.getElementById("ddselect");
+            // window.document.location='./arrozConPatoIngredients.html';
+             -->
+   
+</head>
+<body>
+    <header id="main-header">
+        <h1 id="heading">Peru Bitute</h1>
+        <p id="intro">The last 10 years, Peru has been recognized as one of the world’s best culinary
+            destinations, a perfect
+            option for foodie tourism. The country’s gastronomic <strong> boom</strong> owes a great deal to its
+            biodiversity along with its multicultural heritage.</p>
+
+        <div id="rightside">
+            <label>Pick your Recipe: </label>
+            <select id="ddselect" name="pickRecipe" onchange="fn1()">
+                <option value="selection"> Select </option>
+                <option value=" arrozConPato" id="pollo"> Arroz Con Pato</option>
+                <option value=" ajiDeGallina" id="gallina"> Aji De Gallina</option>
+                <option value=" lomoSaltado"> Lomo Saltado</option>
+            </select>
+            <!-- <select id="ddselect" name="pickRecipe";>
+
+                <option value="selection"> Select </option>
+                <option value=" arrozConPato" id="pollo"> Arroz Con Pato</option>
+                <option value=" ajiDeGallina" id="gallina"> Aji De Gallina</option>
+                <option value=" lomoSaltado"> Lomo Saltado</option>
+            
+            </select> -->
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="column-layout">
+            <section>
+                <h1 class="dishes"> Arroz Con Pato</h1>
+                <p id="arrozConPato"> It's green rice is one of the most famous dishes in Chiclayo, north of Lima. Cooks
+                    in this region use the rice
+                    harvested in local farms, fragrant cilantro leaves -never the stems-, peas, and a well fed female
+                    duck, to
+                    make this legendary entree. </p>
+                <img class="img-dishes" src="img/ArrozConPato.jpg" alt="Arroz con Pato">
+                <div class="link">
+                    <a href="arrozConPatoIngredients.html">SEE THE INGREDIENTS</a>
+                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/eizJ_BwY6pA" frameborder="0" allow="accelerometer; autoplay; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </div>
+            </section>
+            <section>
+                <h1 class="dishes"> Aji de Gallina</h1>
+                <p id="ajiDeGallina">Aji de gallina is a delicious Peruvian classic—slightly spicy and bright yellow
+                    from the famous aji amarillo peppers,
+                    and rich from the unusual cream sauce made with ground walnuts. This dish is traditionally served
+                    over rice with boiled yellow potatoes
+                    and black olives.</p>
+                <img class="img-dishes" src="img/ajiDeGallina.jpg" alt="Aji De Gallina">
+                <div class="link">
+                    <a href="arrozConPatoIngredients.html">SEE THE INGREDIENTS</a>
+                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
+                </div>
+            </section>
+            <section>
+                <h1 class="dishes"> Lomo Saltado</h1>
+                <p id="lomoSaltado">Lomo saltado is a popular, traditional Peruvian dish, a stir fry that typically
+                    combines marinated strips of sirloin
+                    with onions, tomatoes, french fries, and other ingredients; and is typically served with rice.</p>
+                <img class="img-dishes" src="img/lomoSaltado.jpg" alt="Lomo Saltado">
+                <div class="link">
+                    <a href="arrozConPatoIngredients.html">SEE THE INGREDIENTS</a>
+                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- <form action ="process.php" method="POST">
+<div>
+    <label>First Name</label>
+    <input type="text" name="firstName" placeholder="Enter First Name">
+</div>
+<br>
+<div>
+    <label>Last Name </label>
+    <input type="text" name="lastName" placeholder="Enter Last Name">
+</div>
+<br>
+<div>
+    <label>Email </label>
+    <input type="email" name="email" placeholder="Enter Email">
+</div>
+<br>
+<div>
+    <label>Comments </label>
+    <textarea rows="10" cols="30" name="message" placeholder="Enter Message"></textarea>
+</div>
+<br>
+</form>
+<button click ="Some Function"> Submit</button> -->
+    <hr>  
+    <div id="media">
+            <ul>
+                <li><img src="img/facebook.png" alt="facebook"></li>
+                <li><img src="img/instagram.jpg" alt="instagram">
+                <li><img src="img/twitter.png" alt="twitte"></li>
+            </ul>
+        </div>
+    <footer id="main-footer">
+    </footer>
+    <script src = "js/main.js"></script>
+
+</body>
+</html>

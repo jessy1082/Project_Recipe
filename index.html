@@ -6,18 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <title>My Peruvian Dishes</title>
-    <!-- <script type="text/javascript"> 
-    function fn1()
-        {
-            // var d = document.getElementById("ddselect");
-            // var displaytext= d.options(d.selectedIndex).text;
-            // document.getElementById("txtvalue").value=displaytext;
-
-            // var select = document.getElementById("ddselect");
-            // window.document.location='./arrozConPatoIngredients.html';
-             -->
-   
 </head>
+
 <body>
     <header id="main-header">
         <h1 id="heading">Peru Bitute</h1>
@@ -28,20 +18,12 @@
 
         <div id="rightside">
             <label>Pick your Recipe: </label>
-            <select id="ddselect" name="pickRecipe" onchange="fn1()">
-                <option value="selection"> Select </option>
-                <option value=" arrozConPato" id="pollo"> Arroz Con Pato</option>
-                <option value=" ajiDeGallina" id="gallina"> Aji De Gallina</option>
-                <option value=" lomoSaltado"> Lomo Saltado</option>
+            <select id="ddselect" name="pickRecipe" onchange="fn1();">
+                <option value="0"> Select </option>
+                <option value="1"> Arroz Con Pato</option>
+                <option value="2"> Aji De Gallina</option>
+                <option value="3"> Lomo Saltado</option>
             </select>
-            <!-- <select id="ddselect" name="pickRecipe";>
-
-                <option value="selection"> Select </option>
-                <option value=" arrozConPato" id="pollo"> Arroz Con Pato</option>
-                <option value=" ajiDeGallina" id="gallina"> Aji De Gallina</option>
-                <option value=" lomoSaltado"> Lomo Saltado</option>
-            
-            </select> -->
         </div>
     </header>
     <hr>
@@ -56,11 +38,28 @@
                     duck, to
                     make this legendary entree. </p>
                 <img class="img-dishes" src="img/ArrozConPato.jpg" alt="Arroz con Pato">
-                <div class="link">
-                    <a href="arrozConPatoIngredients.html">SEE THE INGREDIENTS</a>
-                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/eizJ_BwY6pA" frameborder="0" allow="accelerometer; autoplay; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+                 <a href="Ingredients.html">SEE THE INGREDIENTS</a>
+
+                 <div class="link">
+                    <!-- Trigger/Open The Modal -->
+                     <button id="myIng">Ingredients</button>
+
+
+
+                    <button id="myBtn">Open Modal</button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eizJ_BwY6pA"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></p>
+                        </div>
+                    </div>
+                   <!-- <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a> -->
                 </div>
             </section>
             <section>
@@ -72,7 +71,7 @@
                     and black olives.</p>
                 <img class="img-dishes" src="img/ajiDeGallina.jpg" alt="Aji De Gallina">
                 <div class="link">
-                    <a href="arrozConPatoIngredients.html">SEE THE INGREDIENTS</a>
+                    <a href="Ingredients2.html">SEE THE INGREDIENTS</a>
                     <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
                 </div>
             </section>
@@ -83,47 +82,41 @@
                     with onions, tomatoes, french fries, and other ingredients; and is typically served with rice.</p>
                 <img class="img-dishes" src="img/lomoSaltado.jpg" alt="Lomo Saltado">
                 <div class="link">
-                    <a href="arrozConPatoIngredients.html">SEE THE INGREDIENTS</a>
+                    <a href="Ingredients3.html">SEE THE INGREDIENTS</a>
                     <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
                 </div>
             </section>
         </div>
     </main>
-
-    <!-- <form action ="process.php" method="POST">
-<div>
-    <label>First Name</label>
-    <input type="text" name="firstName" placeholder="Enter First Name">
-</div>
-<br>
-<div>
-    <label>Last Name </label>
-    <input type="text" name="lastName" placeholder="Enter Last Name">
-</div>
-<br>
-<div>
-    <label>Email </label>
-    <input type="email" name="email" placeholder="Enter Email">
-</div>
-<br>
-<div>
-    <label>Comments </label>
-    <textarea rows="10" cols="30" name="message" placeholder="Enter Message"></textarea>
-</div>
-<br>
-</form>
-<button click ="Some Function"> Submit</button> -->
-    <hr>  
-    <div id="media">
-            <ul>
-                <li><img src="img/facebook.png" alt="facebook"></li>
-                <li><img src="img/instagram.jpg" alt="instagram">
-                <li><img src="img/twitter.png" alt="twitte"></li>
-            </ul>
-        </div>
+    <hr>
     <footer id="main-footer">
+        <div id="chefpic">
+            <img src="img/chef.png" alt="chef">
+        </div>
+        <div id="media">
+            <img src="img/facebook.png" alt="facebook"></li>
+            <img src="img/instagram.jpg" alt="instagram">
+            <img src="img/twitt.png" alt="twitte"></li>
+        </div>
     </footer>
-    <script src = "js/main.js"></script>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eizJ_BwY6pA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>
